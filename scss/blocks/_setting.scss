@@ -1,0 +1,52 @@
+.setting {
+	display: flex;
+	justify-content: center;
+	margin: 60px auto;
+}
+
+.setting__inner,
+.setting__left,
+.setting__right {
+	display: flex;
+}
+
+.setting__inner {
+	width: 1050px;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 24px;
+	padding-right: 70px;
+	padding-bottom: 24px;
+	padding-left: 30px;
+	border-radius: 5px;
+	overflow: hidden;
+
+	background-image: url(./../images/notification-bg.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.setting__left {
+	width: 404px;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 26px;
+	color: $news-title-color;
+}
+
+.setting__btn {
+	font-family: 'Rubik';
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 24px;
+	padding: 13px 30px;
+	border: none;
+	color: $main-white;
+	background-color: #f78b3b;
+	border-radius: 10px;
+	transition: all 0.4s linear;
+	&:hover {
+		@include hovering-effect;
+	}
+}

@@ -1,0 +1,17 @@
+.ad {
+	border-radius: 8px;
+	overflow: hidden;
+	margin-top: 30px;
+	margin-bottom: 50px;
+}
+
+.ad__link {
+	display: flex;
+}
+
+.ad__image {
+	width: 1200px;
+	height: 128px;
+	object-fit: cover;
+	object-position: center;
+}

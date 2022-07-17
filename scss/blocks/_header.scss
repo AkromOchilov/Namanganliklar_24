@@ -1,0 +1,127 @@
+.header {
+	padding: 30px 0;
+	background-color: $bg-color;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 100;
+}
+
+.header__inner,
+.header__left,
+.header__link,
+.header__right {
+	display: flex;
+}
+
+.header__inner {
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header__link {
+	margin-right: 35px;
+}
+
+.header__currencies,
+.header__right,
+.header__form,
+.languages {
+	display: flex;
+	align-items: center;
+}
+
+.header__currency {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 19px;
+	color: #555555;
+	& + & {
+		margin-left: 25px;
+	}
+}
+
+.currency {
+	color: $currency-color;
+	font-weight: 700;
+	margin-right: 3px;
+}
+
+.header__label-search {
+	position: relative;
+	display: flex;
+	align-items: center;
+
+	&::before {
+		content: '';
+		display: block;
+		width: 20px;
+		height: 20px;
+		background-image: url('./../images/search.svg');
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: auto;
+
+		position: absolute;
+		margin-left: 15px;
+	}
+}
+
+.ipt__search {
+	display: flex;
+	padding: 13px 14px 13px 40px;
+	border-radius: 60px;
+	background-color: $main-white;
+	border: none;
+	outline: none;
+	&::placeholder {
+		font-size: 14px;
+		line-height: 17px;
+	}
+}
+
+.header__languages {
+	display: flex;
+	background-color: #dce6ff;
+	border-radius: 39px;
+	padding: 3px;
+	margin: 0 25px;
+	justify-content: space-between;
+	align-items: center;
+	width: 70px;
+}
+
+.header__lable {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 30px;
+	height: 30px;
+	padding: 9px 7px;
+	border-radius: 50%;
+	font-size: 13px;
+	line-height: 15px;
+	color: #a6a6a6;
+	cursor: pointer;
+}
+
+.language:checked + .header__lable {
+	background-color: #ffffff;
+	color: #000000;
+}
+
+.sign__up {
+	display: flex;
+	&--link {
+		color: $main-white;
+		font-weight: 500;
+		transition: all 0.4s linear;
+		@include link-template(16px, 19px, 13px 20px, $signup-color, 10px);
+		&:hover {
+			@include hovering-effect;
+		}
+	}
+}
+
+// Header end
