@@ -153,8 +153,10 @@
 	line-height: 19px;
 	color: $news-title-color;
 	background-color: #eaeaea;
+	border: none;
 	border-radius: 10px;
 	transition: all 0.2s linear;
+
 	&:hover {
 		@include hovering-effect;
 	}
@@ -191,6 +193,10 @@
 	&:not(:last-child) {
 		border-bottom: 1px solid #d2d2d2;
 		margin-bottom: 1px;
+	}
+	&:hover > .right__title {
+		color: rgb(109, 155, 239);
+		transition: 0.3s ease;
 	}
 }
 
