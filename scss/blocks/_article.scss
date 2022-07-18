@@ -1,0 +1,235 @@
+.article__wrapper {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 100px;
+}
+
+.article__wrapper--heading {
+	margin: 0;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 28px;
+	color: $news-title-color;
+	margin-bottom: 20px;
+}
+
+.article__inner {
+	display: flex;
+	justify-content: space-between;
+}
+
+.article__left {
+	display: flex;
+	flex-direction: column;
+}
+
+.article__box--holder {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 17px;
+}
+
+.article__box {
+	display: flex;
+	padding: 20px 17px;
+	background-color: $news-box-color;
+	border-radius: 15px;
+	transition: all 0.4s linear;
+	position: relative;
+	overflow: hidden;
+	&:not(:last-child) {
+		margin-bottom: 10px;
+	}
+	&:hover {
+		@include hovering-effect;
+	}
+}
+
+.box__link {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+.article__image--holder {
+	display: flex;
+	width: 210px;
+	border-radius: 10px;
+	margin-right: 15px;
+}
+
+.article__image {
+	width: 210px;
+	height: 165px;
+	border-radius: 10px;
+	object-fit: contain;
+	object-position: center;
+}
+
+.article__content {
+	display: flex;
+	flex-direction: column;
+}
+
+.article__title {
+	margin: 0;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 26px;
+	color: $news-title-color;
+	margin-bottom: 10px;
+}
+
+.article__text {
+	margin: 0;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 22px;
+	color: $news-text-color;
+	margin-bottom: 17px;
+}
+
+.article__source {
+	display: flex;
+	align-items: center;
+	font-size: 12px;
+	line-height: 14px;
+	color: $source-color;
+
+	&-1::before {
+		content: '';
+		display: block;
+		width: 20px;
+		height: 20px;
+		margin-right: 10px;
+		background-image: url(./../images/german_icon.png);
+		background-repeat: no-repeat;
+		background-position: auto;
+		border-radius: 5px;
+	}
+	&-2::before {
+		content: '';
+		display: block;
+		width: 20px;
+		height: 20px;
+		margin-right: 10px;
+		background-image: url(./../images/merkel_icon.png);
+		background-repeat: no-repeat;
+		background-position: auto;
+		border-radius: 5px;
+	}
+	&-3::before {
+		content: '';
+		display: block;
+		width: 20px;
+		height: 20px;
+		margin-right: 10px;
+		background-image: url(./../images/china_icon.png);
+		background-repeat: no-repeat;
+		background-position: auto;
+		border-radius: 5px;
+	}
+	&-4::before {
+		content: '';
+		display: block;
+		width: 20px;
+		height: 20px;
+		margin-right: 10px;
+		background-image: url(./../images/antichina_icon.png);
+		background-repeat: no-repeat;
+		background-position: auto;
+		border-radius: 5px;
+	}
+}
+
+.article__more-link {
+	display: flex;
+	justify-content: center;
+	padding: 17px 0;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 19px;
+	color: $news-title-color;
+	background-color: #eaeaea;
+	border-radius: 10px;
+	transition: all 0.2s linear;
+	&:hover {
+		@include hovering-effect;
+	}
+}
+
+// Article right part
+.article__right {
+	margin-left: 10px;
+}
+
+.article__right-header {
+	display: flex;
+	flex-direction: column;
+	background-color: $news-box-color;
+	border-radius: 15px;
+	padding: 20px 17px 0px;
+	margin-bottom: 10px;
+}
+
+.right__heading {
+	margin: 0;
+	margin-bottom: 5px;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 28px;
+	color: $news-title-color;
+}
+
+.right__box {
+	display: flex;
+	flex-direction: column;
+	padding: 20px 0;
+	position: relative;
+	&:not(:last-child) {
+		border-bottom: 1px solid #d2d2d2;
+		margin-bottom: 1px;
+	}
+}
+
+.right__title {
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 24px;
+	color: $news-title-color;
+	margin: 0;
+	margin-bottom: 8px;
+}
+
+.article__other--links {
+	position: absolute;
+	top: 10px;
+	right: 0;
+	bottom: 10px;
+	left: 0;
+}
+
+.right__source {
+	display: flex;
+	font-weight: 400;
+	font-size: 13px;
+	line-height: 15px;
+	color: $news-text-color;
+}
+
+.article__source--time {
+	margin-left: 4px;
+}
+
+.article__right-footer {
+	display: flex;
+	border-radius: 15px;
+	overflow: hidden;
+}
+
+.article__ad-link {
+	display: flex;
+	cursor: pointer;
+}

@@ -7,13 +7,13 @@
 	padding-top: 30px;
 	padding-bottom: 20px;
 	border-bottom: 1px solid $nav-line;
-	margin-bottom: 40px;
 }
 
 .nav__list {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	flex-wrap: wrap;
 }
 
 .nav__link {
@@ -21,4 +21,40 @@
 	font-size: 18px;
 	line-height: 21px;
 	color: $nav-color;
+	margin: 0 5px;
+	&:last-child {
+		margin-right: 0;
+	}
+
+	&:first-child {
+		margin-left: 0;
+	}
+}
+
+.hover-underline-animation {
+	display: inline-block;
+	position: relative;
+	transition: all 0.4s linear;
+	&:hover {
+		color: #0087ca;
+		transform: scale(1.15);
+	}
+}
+
+.hover-underline-animation:after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	transform: scaleX(0);
+	height: 2px;
+	bottom: 0;
+	left: 0;
+	background-color: #0087ca;
+	transform-origin: bottom right;
+	transition: transform 0.25s ease-in-out;
+}
+
+.hover-underline-animation:hover:after {
+	transform: scaleX(1);
+	transform-origin: bottom left;
 }

@@ -7,7 +7,7 @@
 	border-radius: $radius;
 }
 
-@mixin before($image) {
+@mixin before($bg-image) {
 	content: '';
 	width: 20;
 	height: 20;
@@ -15,4 +15,9 @@
 	background-repeat: no-repeat;
 	background-size: contain;
 	background-image: url($bg-image);
+}
+
+@mixin hovering-effect {
+	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	transform: scale(1.01);
 }

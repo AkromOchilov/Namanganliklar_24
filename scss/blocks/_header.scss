@@ -1,10 +1,16 @@
 .header {
 	padding: 30px 0;
 	background-color: $bg-color;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 100;
 }
 
 .header__inner,
 .header__left,
+.header__link,
 .header__right {
 	display: flex;
 }
@@ -42,47 +48,67 @@
 	margin-right: 3px;
 }
 
-.lupa {
+.header__label-search {
+	position: relative;
 	display: flex;
-	padding: 13px;
-	padding-right: 6px;
-	background-color: #fff;
-	border-radius: 60px 0px 0px 60px;
-}
+	align-items: center;
 
-.header__ipt {
-	padding: 14px 0px;
-	border: none;
-	outline: none;
-	border-radius: 0px 60px 60px 0px;
-	flex-grow: 1;
-	&::placeholder {
-		font-family: 'Rubik';
-		// font-style: normal;
-		font-weight: 400;
-		font-size: 14px;
-		line-height: 17px;
-		color: $placeholder-color;
+	&::before {
+		content: '';
+		display: block;
+		width: 20px;
+		height: 20px;
+		background-image: url('./../images/search.svg');
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: auto;
+
+		position: absolute;
+		margin-left: 15px;
 	}
 }
 
-.languages {
-	padding: 3px;
-	background: $language-color;
-	border-radius: 39px;
-	margin: 0px 25px;
-}
-
-.uz,
-.ru {
-	border: none;
-	background-color: transparent;
-}
-
-.uz {
-	padding: 9px 7px;
+.ipt__search {
+	display: flex;
+	padding: 13px 14px 13px 40px;
+	border-radius: 60px;
 	background-color: $main-white;
+	border: none;
+	outline: none;
+	&::placeholder {
+		font-size: 14px;
+		line-height: 17px;
+	}
+}
+
+.header__languages {
+	display: flex;
+	background-color: #dce6ff;
+	border-radius: 39px;
+	padding: 3px;
+	margin: 0 25px;
+	justify-content: space-between;
+	align-items: center;
+	width: 70px;
+}
+
+.header__lable {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 30px;
+	height: 30px;
+	padding: 9px 7px;
 	border-radius: 50%;
+	font-size: 13px;
+	line-height: 15px;
+	color: #a6a6a6;
+	cursor: pointer;
+}
+
+.language:checked + .header__lable {
+	background-color: #ffffff;
+	color: #000000;
 }
 
 .sign__up {
@@ -90,7 +116,11 @@
 	&--link {
 		color: $main-white;
 		font-weight: 500;
+		transition: all 0.4s linear;
 		@include link-template(16px, 19px, 13px 20px, $signup-color, 10px);
+		&:hover {
+			@include hovering-effect;
+		}
 	}
 }
 
