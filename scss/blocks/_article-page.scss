@@ -1,0 +1,105 @@
+.magazine__container {
+	margin-top: 50px;
+}
+
+.magazine__wrapper--left {
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 50px;
+	border-bottom: 1px solid #d2d2d2;
+}
+
+.magazine__source {
+	display: flex;
+	align-items: center;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 17px;
+	color: $source-color;
+	margin-bottom: 30px;
+	&::before {
+		content: '';
+		display: block;
+		width: 30px;
+		height: 30px;
+		background-image: url(./../images/antichina_icon.png);
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center;
+		margin-right: 10px;
+	}
+}
+
+.magazine__title {
+	font-weight: 800;
+	font-size: 26px;
+	line-height: 36px;
+	color: $news-title-color;
+	margin: 0;
+	margin-bottom: 20px;
+}
+
+.magazine__image-holder {
+	display: flex;
+	border-radius: 13px;
+	overflow: hidden;
+	margin-bottom: 25px;
+}
+
+.magazine__text {
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 30px;
+	color: $news-title-color;
+	margin: 0;
+}
+
+.magazine__text:not(:last-child) {
+	margin-bottom: 24px;
+}
+
+.magazine__bottom {
+	display: flex;
+	flex-direction: column;
+	margin-top: 60px;
+}
+
+.bottom__title {
+	font-weight: 800;
+	font-size: 24px;
+	line-height: 28px;
+	color: $news-title-color;
+	margin: 0;
+	margin-bottom: 20px;
+}
+
+.bottom__inner {
+	display: flex;
+	justify-content: space-between;
+}
+
+.inner__box {
+	padding: 20px 20px 15px;
+	width: 393px;
+	border-radius: 15px;
+	background-color: $news-box-color;
+	position: relative;
+}
+
+.inner__title {
+	font-weight: 900;
+	font-size: 20px;
+	line-height: 26px;
+	color: $news-title-color;
+	margin: 0;
+	margin-bottom: 10px;
+}
+
+.inner__text {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 22px;
+	color: $news-text-color;
+	margin: 0;
+	margin-bottom: 20px;
+}
