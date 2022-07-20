@@ -1,0 +1,105 @@
+.contact {
+	margin-top: 60px;
+	margin-bottom: 100px;
+}
+
+.contact__heading {
+	font-weight: 800;
+	font-size: 24px;
+	line-height: 28px;
+	color: $news-title-color;
+	margin: 0;
+	margin-bottom: 20px;
+}
+
+.contact__inner-holder {
+	display: flex;
+	width: 1200px;
+	margin-bottom: 20px;
+}
+
+.contact__left {
+	display: flex;
+	flex-direction: column;
+	width: 696px;
+	margin-right: 10px;
+}
+
+.first__layer {
+	display: flex;
+	margin-bottom: 10px;
+}
+
+.inp,
+.inp-email {
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	border-radius: 10px;
+	padding: 18px 20px;
+	outline: none;
+	width: 50%;
+}
+
+.inp:not(:last-child) {
+	margin-right: 10px;
+}
+
+.email__holder {
+	display: flex;
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+.inp-email {
+	width: 100%;
+}
+
+.message__field {
+	padding: 18px 20px;
+	resize: none;
+	width: 696px;
+	height: 180px;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	border-radius: 10px;
+}
+
+.submit {
+	padding: 17px 30px;
+	background-color: #7297ef;
+	border: none;
+	border-radius: 10px;
+	color: $main-white;
+}
+
+.contact__right {
+	display: flex;
+	flex-direction: column;
+	width: 494px;
+	background-color: $news-box-color;
+	border-radius: 10px;
+	padding: 0px 25px;
+	padding-top: 40px;
+	padding-bottom: 20px;
+}
+
+.address__box:not(:last-child) {
+	border-bottom: 1px solid $box-bottom-border;
+	margin-bottom: 20px;
+}
+
+.address__title {
+	margin: 0;
+	font-weight: 800;
+	font-size: 20px;
+	line-height: 24px;
+	color: $news-title-color;
+	margin-bottom: 7px;
+}
+
+.contact__link-holder {
+	display: flex;
+	margin-bottom: 20px;
+}
+
+.contact__link {
+	color: $news-title-color;
+}

@@ -1,0 +1,96 @@
+.span__source {
+	display: flex;
+	align-items: center;
+	font-size: 12px;
+	line-height: 14px;
+	color: $source-color;
+
+	&-1::before {
+		content: '';
+		display: block;
+		width: 20px;
+		height: 20px;
+		margin-right: 10px;
+		background-image: url(./../images/german_icon.png);
+		background-repeat: no-repeat;
+		background-position: auto;
+		border-radius: 5px;
+	}
+	&-2::before {
+		content: '';
+		display: block;
+		width: 20px;
+		height: 20px;
+		margin-right: 10px;
+		background-image: url(./../images/pepelats.svg);
+		background-repeat: no-repeat;
+		background-position: auto;
+		border-radius: 5px;
+	}
+	&-3::before {
+		content: '';
+		display: block;
+		width: 20px;
+		height: 20px;
+		margin-right: 10px;
+		background-image: url(./../images/dns-icon.svg);
+		background-repeat: no-repeat;
+		background-position: auto;
+		border-radius: 5px;
+	}
+	&-4::before {
+		content: '';
+		display: block;
+		width: 20px;
+		height: 20px;
+		margin-right: 10px;
+		background-image: url(./../images/list-cars-icon.svg);
+		background-repeat: no-repeat;
+		background-position: auto;
+		border-radius: 5px;
+	}
+	&-5::before {
+		content: '';
+		display: block;
+		width: 20px;
+		height: 20px;
+		margin-right: 10px;
+		background-image: url(./../images/iphone13-icon.svg);
+		background-repeat: no-repeat;
+		background-position: auto;
+		border-radius: 5px;
+	}
+	&-6::before {
+		content: '';
+		display: block;
+		width: 20px;
+		height: 20px;
+		margin-right: 10px;
+		background-image: url(./../images/huobi-icon.svg);
+		background-repeat: no-repeat;
+		background-position: auto;
+		border-radius: 5px;
+	}
+	&-7::before {
+		content: '';
+		display: block;
+		width: 20px;
+		height: 20px;
+		margin-right: 10px;
+		background-image: url(./../images/list-movies-icon.svg);
+		background-repeat: no-repeat;
+		background-position: auto;
+		border-radius: 5px;
+	}
+	&-8::before {
+		content: '';
+		display: block;
+		width: 20px;
+		height: 20px;
+		margin-right: 10px;
+		background-image: url(./../images/list-tesla-icon.svg);
+		background-repeat: no-repeat;
+		background-position: auto;
+		border-radius: 5px;
+	}
+}
