@@ -9,19 +9,17 @@
 	</head>
 	<body>
 		<!-- MODAL!!! -->
-		<div class="modal modal__off">
+		<div class="modal">
 			<div class="modal__wrapper">
-				<span class="modal__image-holder">
-					<a href="#" class="cancel__link">
-						<img
-							src="./images/close.svg"
-							alt="Cancel icon"
-							class="modal__image"
-							width="24"
-							height="24"
-						/>
-					</a>
-				</span>
+				<button class="cancel__link">
+					<img
+						src="./images/close.svg"
+						alt="Cancel icon"
+						class="modal__image"
+						width="24"
+						height="24"
+					/>
+				</button>
 				<div class="modal__inner">
 					<h2 class="modal__title">
 						Хотите быть в курсе свежих новостей? Включите
@@ -66,6 +64,7 @@
 						<form
 							class="header__form"
 							action="https://echo.htmlacademy.ru"
+							method="post"
 						>
 							<label class="header__label-search" for="search">
 								<input
@@ -244,7 +243,7 @@
 							></span
 						>
 						<a
-							href="https://youtube.com"
+							href="./article.html"
 							class="box__open--link"
 							target="_blank"
 							><span class="visually-hidden">Open</span></a
@@ -286,7 +285,7 @@
 							></span
 						>
 						<a
-							href="https://youtube.com"
+							href="./article.html"
 							class="box__open--link"
 							target="_blank"
 							><span class="open__link--text visually-hidden"
@@ -330,7 +329,7 @@
 							></span
 						>
 						<a
-							href="https://youtube.com"
+							href="./article.html"
 							class="box__open--link"
 							target="_blank"
 							><span class="open__link--text visually-hidden"
@@ -374,7 +373,7 @@
 							></span
 						>
 						<a
-							href="https://youtube.com"
+							href="./article.html"
 							class="box__open--link"
 							target="_blank"
 							><span class="open__link--text visually-hidden"
@@ -418,7 +417,7 @@
 							></span
 						>
 						<a
-							href="https://youtube.com"
+							href="./article.html"
 							class="box__open--link"
 							target="_blank"
 							><span class="open__link--text visually-hidden"
@@ -462,7 +461,7 @@
 							></span
 						>
 						<a
-							href="https://youtube.com"
+							href="./article.html"
 							class="box__open--link"
 							target="_blank"
 							><span class="open__link--text visually-hidden"
@@ -541,7 +540,7 @@
 										</span>
 									</div>
 									<a
-										href="https://htmlacademy.ru"
+										href="./article.html"
 										class="box__link"
 										target="_blank"
 										><span class="visually-hidden"
@@ -592,7 +591,7 @@
 										</span>
 									</div>
 									<a
-										href="https://htmlacademy.ru"
+										href="./article.html"
 										class="box__link"
 										target="_blank"
 										><span class="visually-hidden"
@@ -644,7 +643,7 @@
 										</span>
 									</div>
 									<a
-										href="https://htmlacademy.ru"
+										href="./article.html"
 										class="box__link"
 										target="_blank"
 										><span class="visually-hidden"
@@ -696,7 +695,7 @@
 										</span>
 									</div>
 									<a
-										href="https://htmlacademy.ru"
+										href="./article.html"
 										class="box__link"
 										target="_blank"
 										><span class="visually-hidden"
@@ -708,7 +707,7 @@
 							<!-- Article box end -->
 							<!-- Article FOOTER -->
 
-							<button class="article__more-link">
+							<button id="myButton" class="article__more-link">
 								Показать ещё
 							</button>
 						</div>
@@ -888,37 +887,51 @@
 						<div class="top__right">
 							<ul class="footer__list">
 								<li class="footer__item">
-									<a class="footer__links" href="#"
+									<a
+										class="footer__links"
+										href="./contact.html"
 										>Информация о сайте</a
 									>
 								</li>
 								<li class="footer__item">
-									<a class="footer__links" href="#"
+									<a
+										class="footer__links"
+										href="./contact.html"
 										>Напишите нам</a
 									>
 								</li>
 								<li class="footer__item">
-									<a class="footer__links" href="#"
+									<a
+										class="footer__links"
+										href="./contact.html"
 										>Реклама</a
 									>
 								</li>
 								<li class="footer__item">
-									<a class="footer__links" href="#"
+									<a
+										class="footer__links"
+										href="./contact.html"
 										>Прислать новость</a
 									>
 								</li>
 								<li class="footer__item">
-									<a class="footer__links" href="#"
+									<a
+										class="footer__links"
+										href="./contact.html"
 										>Использование материалов</a
 									>
 								</li>
 								<li class="footer__item">
-									<a class="footer__links" href="#"
+									<a
+										class="footer__links"
+										href="./contact.html"
 										>Темы дня</a
 									>
 								</li>
 								<li class="footer__item">
-									<a class="footer__links" href="#"
+									<a
+										class="footer__links"
+										href="./contact.html"
 										>Наша команда
 									</a>
 								</li>
@@ -975,5 +988,7 @@
 				<!-- Footer bottom end -->
 			</div>
 		</footer>
+
+		<script src="./js/main.js"></script>
 	</body>
 </html>

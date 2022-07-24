@@ -62,6 +62,11 @@
 	border-radius: 10px;
 }
 
+.btn__holder {
+	float: right;
+	margin-top: 20px;
+}
+
 .submit {
 	padding: 17px 30px;
 	background-color: #7297ef;
@@ -73,12 +78,17 @@
 .contact__right {
 	display: flex;
 	flex-direction: column;
-	width: 494px;
 	background-color: $news-box-color;
 	border-radius: 10px;
+	width: 494px;
+	max-height: 310px;
 	padding: 0px 25px;
 	padding-top: 40px;
 	padding-bottom: 20px;
+}
+
+.address__wrapper {
+	font-style: normal;
 }
 
 .address__box:not(:last-child) {

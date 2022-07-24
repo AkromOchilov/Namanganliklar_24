@@ -1,22 +1,22 @@
 .modal {
+	display: none;
+}
+
+.modal-on {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
-.modal__off {
-	display: none;
-}
-
 .modal__wrapper {
 	display: flex;
 	flex-direction: column;
-	width: 850px;
+	max-width: 850px;
 	background-color: $main-white;
 	border-radius: 20px;
 	padding: 20px;
 
-	position: absolute;
+	position: fixed;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
@@ -24,7 +24,7 @@
 }
 
 .curtain {
-	position: absolute;
+	position: fixed;
 	top: 0;
 	right: 0;
 	bottom: 0;
@@ -33,16 +33,15 @@
 	background-color: rgba(0, 0, 0, 0.4);
 }
 
-.modal__image-holder {
-	display: flex;
+.cancel__link {
+	display: block;
 	align-self: flex-end;
+	float: inline-end;
 	background-color: $main-white;
 	margin-bottom: 6px;
-}
-
-.cancel__link {
-	display: flex;
 	border-radius: 50%;
+	border: none;
+	cursor: pointer;
 }
 
 .modal__inner {
@@ -70,4 +69,5 @@
 	border-radius: 10px;
 	color: $main-white;
 	border: none;
+	cursor: pointer;
 }
