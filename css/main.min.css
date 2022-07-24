@@ -378,23 +378,23 @@ a {
 }
 
 .modal {
+  display: none;
+}
+
+.modal-on {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.modal__off {
-  display: none;
-}
-
 .modal__wrapper {
   display: flex;
   flex-direction: column;
-  width: 850px;
+  max-width: 850px;
   background-color: #ffffff;
   border-radius: 20px;
   padding: 20px;
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -402,7 +402,7 @@ a {
 }
 
 .curtain {
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   bottom: 0;
@@ -411,16 +411,15 @@ a {
   background-color: rgba(0, 0, 0, 0.4);
 }
 
-.modal__image-holder {
-  display: flex;
+.cancel__link {
+  display: block;
   align-self: flex-end;
+  float: inline-end;
   background-color: #ffffff;
   margin-bottom: 6px;
-}
-
-.cancel__link {
-  display: flex;
   border-radius: 50%;
+  border: none;
+  cursor: pointer;
 }
 
 .modal__inner {
@@ -448,6 +447,7 @@ a {
   border-radius: 10px;
   color: #ffffff;
   border: none;
+  cursor: pointer;
 }
 
 .header {
@@ -868,6 +868,7 @@ a {
   line-height: 24px;
   padding: 13px 30px;
   border: none;
+  cursor: pointer;
   color: #ffffff;
   background-color: #f78b3b;
   border-radius: 10px;
@@ -1493,6 +1494,11 @@ a {
   border-radius: 10px;
 }
 
+.btn__holder {
+  float: right;
+  margin-top: 20px;
+}
+
 .submit {
   padding: 17px 30px;
   background-color: #7297ef;
@@ -1504,12 +1510,17 @@ a {
 .contact__right {
   display: flex;
   flex-direction: column;
-  width: 494px;
   background-color: #f6f6f6;
   border-radius: 10px;
+  width: 494px;
+  max-height: 310px;
   padding: 0px 25px;
   padding-top: 40px;
   padding-bottom: 20px;
+}
+
+.address__wrapper {
+  font-style: normal;
 }
 
 .address__box:not(:last-child) {
